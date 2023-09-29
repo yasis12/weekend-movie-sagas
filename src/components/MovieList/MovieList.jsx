@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import './MovieList.css'
+import './MovieList.css';
+import { Link } from 'react-router-dom';
 
 function MovieList() {
 
@@ -24,6 +25,8 @@ function MovieList() {
                     );
                 })}
             </section>
+
+            <Link path="/Movie-Details">Movie Detials</Link>
         </main>
 
     );
