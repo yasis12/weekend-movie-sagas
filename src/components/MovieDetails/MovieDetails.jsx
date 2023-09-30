@@ -10,8 +10,11 @@ function movieDetails () {
 // React hooks
 const dispatch = useDispatch();
 const history = useHistory();
+// Store of all the movies
 const movie = useSelector(store => store.movies);
+// useParams targets the id passthrough the route
 const thisID = useParams();
+console.log("this ID", thisID);
 // This part finds what movie has the id that is equal to the useParams ID
 const thisMovie = movie.find(
     (movie) => movie.id === Number(thisID.id)
