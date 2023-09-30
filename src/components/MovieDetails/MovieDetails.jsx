@@ -5,7 +5,7 @@ function movieDetails () {
 return (
     <div>
         <h1>Movie Details go here</h1>
-        <Link path="/">Movie List </Link>
+        <Link to="/">Movie List </Link>
     </div>
     
 )
