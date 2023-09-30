@@ -1,3 +1,6 @@
+//stylilng
+import './MovieDetials.css'
+//imports
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {  useHistory, useParams } from 'react-router-dom';
@@ -26,14 +29,13 @@ useEffect(() => {
 
 return (
     <div>
-        <section className="movies">
-            <h1>{thisMovie.title}</h1>
-            <br />
-            <br />
-            <img src={thisMovie.poster} alt={thisMovie.title}/>
-            <h3>{thisMovie.description}</h3>
-          
-            </section>
+        <section className="movies-details">
+            <h1 className='Movie-title'>{thisMovie.title}</h1>
+            <img className='movie-image' src={thisMovie.poster} alt={thisMovie.title}/>
+        </section>
+        <section className='description'>
+            <h3 className='movie-description'>{thisMovie.description}</h3>
+        </section>
         <button onClick={backToMovieList}>Back to Movie List</button>
     </div>
     

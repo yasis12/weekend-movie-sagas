@@ -19,6 +19,8 @@ function MovieList() {
 
     return (
         <main>
+            <h1>The Movies Saga!</h1>
+            <br />
             <h1>MovieList</h1>
             <section className="movies">
                 {movies.map(movie => {
