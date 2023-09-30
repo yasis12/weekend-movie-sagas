@@ -24,10 +24,14 @@ const thisMovie = movie.find(
     (movie) => movie.id === Number(thisID.id)
   );
 
+    // take all data from the store and filter it 
   const genreNames = genre
+  // filter data where movie id = param ID
     .filter(genre => genre.movie_id === Number(thisID.id))
+    //loop and map through the genres from above but only the name
     .map(genre => genre.genre_name);
 
+    console.log("genre names", genreNames);
 
   console.log("THIS MOVIE",thisMovie);
 // Button for routing back to movie List
