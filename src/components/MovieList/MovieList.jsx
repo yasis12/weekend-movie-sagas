@@ -13,8 +13,8 @@ function MovieList() {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
 
-    const handleClick = (event) => {
-        history.push('/Movie-Details')
+    const handleClick = (movieId) => {
+        history.push(`/details/${movieId}`)
     }
 
     return (
@@ -23,17 +23,13 @@ function MovieList() {
             <section className="movies">
                 {movies.map(movie => {
                     return (
-                        <div key={movie.id} onClick={handleClick}>
+                        <div key={movie.id} onClick={() => handleClick(movie.id)}>
                             <h3>{movie.title}</h3>
                             <img src={movie.poster} alt={movie.title}/>
                         </div>
                     );
                 })}
             </section>
-
-            <Link to="/Movie-Details">Movie Detials</Link>
-
-            <br /><br />
         </main>
 
     );
