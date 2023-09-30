@@ -26,4 +26,9 @@ pool.query(query)
 })
 });
 
+// router.get('/:id', function (req, res) {
+//   console.log('id ',req.params['id']);
+//   res.send();
+// });
+
 module.exports = router;

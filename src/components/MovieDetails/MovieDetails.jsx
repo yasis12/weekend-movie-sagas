@@ -12,6 +12,10 @@ const dispatch = useDispatch();
 const history = useHistory();
 // Store of all the movies
 const movie = useSelector(store => store.movies);
+const genre = useSelector(store => store.genres);
+
+console.log('Genre', genre); // this is good
+
 // useParams targets the id passthrough the route
 const thisID = useParams();
 console.log("this ID", thisID);
@@ -20,14 +24,21 @@ const thisMovie = movie.find(
     (movie) => movie.id === Number(thisID.id)
   );
 
+  const genreNames = genre
+    .filter(genre => genre.movie_id === Number(thisID.id))
+    .map(genre => genre.genre_name);
+
+
   console.log("THIS MOVIE",thisMovie);
 // Button for routing back to movie List
 const backToMovieList = (event) => {
     history.push('/');
 }
+
 // Need this use effect so we can call the DB for all the movies
 useEffect(() => {
     dispatch({ type: 'FETCH_MOVIES' });
+    dispatch({ type: 'FETCH_GENRES' })
 }, []);
 
 return (
@@ -35,6 +46,7 @@ return (
         <section className="movies-details">
             <h1 className='Movie-title'>{thisMovie.title}</h1>
             <img className='movie-image' src={thisMovie.poster} alt={thisMovie.title}/>
+            <h4>{genreNames.join(', ')}</h4> 
         </section>
         <section className='description'>
             <h3 className='movie-description'>{thisMovie.description}</h3>
