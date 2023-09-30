@@ -24,10 +24,10 @@ function MovieList() {
             <h1>MovieList</h1>
             <section className="movies">
                 {movies.map(movie => {
-                    return (
-                        <div key={movie.id} onClick={() => handleClick(movie.id)}>
-                            <h3>{movie.title}</h3>
-                            <img src={movie.poster} alt={movie.title}/>
+                     return (
+                        <div key={movie.id} className="movie-frame" onClick={() => handleClick(movie.id)}>
+                          <h3 className="movie-title">{movie.title}</h3>
+                          <img className="movie-image" src={movie.poster} alt={movie.title} />
                         </div>
                     );
                 })}

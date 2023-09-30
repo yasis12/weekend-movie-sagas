@@ -1,4 +1,37 @@
 .movies {
-    display : flex;
+    display: flex;
     flex-wrap: wrap;
-}
+    justify-content: center; /* Center the movie boxes horizontally */
+    max-width: 800px; /* Adjust the maximum width */
+    margin: 0 auto; /* Center the movie boxes horizontally */
+  }
+  
+  .movie-frame {
+    flex: 0 0 calc(25% - 20px); /* 25% width for 4-wide grid with spacing */
+    margin: 7px; /* Adjust spacing as needed */
+    padding: 10px;
+    border: 5px solid #0a0808; /* Add a border for the frame */
+    text-align: center;
+    position: relative; /* Add this for overlay */
+    transition: background-color 0.3s; /* Add smooth transition */
+  }
+  
+  .movie-title {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    position: relative; /* Add this for overlay */
+    transition: background-color 0.3s; /* Add smooth transition */
+  }
+  
+  .movie-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1px;
+  }
+  
+  .movie-frame:hover {
+    background-color: rgba(250, 232, 94, 0.575); /* Adjust the color and opacity as needed */
+  }
