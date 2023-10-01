@@ -24,6 +24,8 @@
     margin-top: 1px;
     position: relative; /* Add this for overlay */
     transition: background-color 0.3s; /* Add smooth transition */
+    color: #000000; /* Set the text color to white or any color that contrasts with the background */
+    text-shadow: 1px 1px 1px rgb(234, 234, 167); /* Add a yellow text shadow */
   }
   
   .movie-image {
@@ -34,4 +36,10 @@
   
   .movie-frame:hover {
     background-color: rgba(250, 232, 94, 0.575); /* Adjust the color and opacity as needed */
+  }
+
+  .movieListTitle {
+    font-size: 50px;
+    color: #000000; /* Set the text color to white or any color that contrasts with the background */
+    text-shadow: 1px 1px 4px yellow; /* Add a yellow text shadow */
   }

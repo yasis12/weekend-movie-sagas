@@ -1,0 +1,79 @@
+/* CSS to style the movie form */
+#movie-title,
+#movie-URL,
+#description,
+#genre {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000; /* Set the text color to white or any color that contrasts with the background */
+  text-shadow: 1px 1px 1px yellow; /* Add a yellow text shadow */
+}
+
+#submit-button {
+  background-color: #ffff00;
+  color: #070303;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the submit button on hover */
+#submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Center the form and add margins */
+.movie-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 10px 20px;
+  border: 1px solid #0a0707;
+  border-radius: 5px;
+  background-color: #463d3d;
+  text-align: center;
+
+  /* Customizable margins */
+  margin-top: 20px; /* Change as needed for top margin */
+  margin-bottom: 20px; /* Change as needed for bottom margin */
+  margin-left: 20px; /* Change as needed for left margin */
+  margin-right: 20px; /* Change as needed for right margin */
+}
+
+body {
+    background: linear-gradient(to bottom, #a4a4a4, #a4a4a4);
+    margin: 0; 
+    padding: 0; 
+  }
+
+  .addMovieDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+  }
+
+  .addMovieContainer {
+    margin-left: 50px; /* Add margin to create space around the container */
+    margin-top: 25px;
+    margin-right: 75px;
+  }
+
+  .addMovieHeader {
+    font-size: 50px;
+    color: #000000; /* Set the text color to white or any color that contrasts with the background */
+    text-shadow: 1px 1px 4px yellow; /* Add a yellow text shadow */
+  }
+  
+  
