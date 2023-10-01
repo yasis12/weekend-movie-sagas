@@ -35,7 +35,7 @@ function AddMovie () {
                     <form className='' onSubmit={submitForm}>
                         <label>Movie Title</label>
                         <input id='movie-title' type="text" placeholder="Movie Title" onChange={event => setNewMovieTitle(event.target.value)}/>
-                        <label>Movie URL</label>
+                        <label>Movie Image URL</label>
                         <input id='movie-URL' type="text" placeholder="Movie poster image URL" onChange={event => setNewMovieURL(event.target.value)}/>
                         <label>Description</label>
                         <input id='description' type="text" placeholder="Description" onChange={event => setNewMovieDescription(event.target.value)}/>
