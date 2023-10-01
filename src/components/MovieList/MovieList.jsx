@@ -17,6 +17,10 @@ function MovieList() {
         history.push(`/details/${movieId}`)
     }
 
+    const addMovieRoute = () => {
+        history.push('/AddMovie')
+    }
+
     return (
         <main>
             <h1>The Movies Saga!</h1>
@@ -32,6 +36,11 @@ function MovieList() {
                     );
                 })}
             </section>
+            <br /><br />
+            <h4>Don't see your favorite movie here? Add one yourself!</h4>
+            <button onClick={addMovieRoute}>ADD MOVIE</button>
+            <br /><br /><br /><br /><br />
+            
         </main>
 
     );
