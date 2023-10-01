@@ -23,7 +23,6 @@ function MovieList() {
 
     return (
         <main>
-            <h1>The Movies Saga!</h1>
             <br />
             <h1 className='movieListTitle'>MovieList</h1>
             <section className="movies">
