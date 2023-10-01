@@ -58,16 +58,15 @@ body {
   }
 
   .addMovieDiv {
-    display: flex;
+  
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Ensure the container takes up the full viewport height */
   }
 
   .addMovieContainer {
-    margin-left: 50px; /* Add margin to create space around the container */
-    margin-top: 25px;
-    margin-right: 75px;
+    width: 400px; /* Set the desired width in pixels */
+    margin: 25px auto; /* Center the container horizontally and add top/bottom margin */
   }
 
   .addMovieHeader {
